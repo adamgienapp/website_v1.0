@@ -13,4 +13,4 @@ app.use(cors());
 
 app.use('/', express.static(__dirname + '/../client/dist'));
 app.use('/:endpoint', express.static(__dirname + '/../client/dist'));
-app.listen(port, () => `Server listening on port ${port}`);
+app.listen(port, () => console.log(`Server listening on port ${port}`));
