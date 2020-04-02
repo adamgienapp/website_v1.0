@@ -1,5 +1,7 @@
 import React from 'react';
-import axios from 'axios';
+import Home from './Home';
+import Projects from './Projects';
+import Contact from './Contact';
 
 
 export default class App extends React.Component {
@@ -7,17 +9,26 @@ export default class App extends React.Component {
     super(props)
 
     this.state = {
-
+      page: window.location.pathname
     };
   }
-
-
 
   render() {
     return (
       <div>
-        
+        <div className="nav-bar">
+
+        </div>
+        <div className="page-content">
+          {
+            { 
+              '/': <Home />,
+              '/Projects/': <Projects />,
+              '/Contact/': <Contact />,
+            }[this.state.page]
+          }
+        </div>
       </div>
-    )
+    );
   }
 }
