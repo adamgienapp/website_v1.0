@@ -5,7 +5,7 @@ const Contact = (props) => {
   return (
     <div className="contact-page">
       <div className="contact-form-container">
-        <form className="contact-form" method="POST" encType="multipart/form-data" name="emailForm" action="form-to-email.php">
+        <form className="contact-form" method="POST" encType="multipart/form-data" name="emailForm" action="#">
           <div className="row">
             <div className="col">
               <input className="form-control" name="name" type="text" placeholder="Full Name" required></input>
