@@ -4,7 +4,32 @@ import React from 'react';
 const Contact = (props) => {
   return (
     <div className="contact-page">
-      <h1>Contact</h1>
+      <div className="contact-form-container">
+        <form className="contact-form">
+          <div className="row">
+            <div className="col">
+              <input className="form-control" name="name" type="text" placeholder="Full Name" required></input>
+            </div>
+            <div className="col">
+              <input className="form-control" name="email" type="email" placeholder="Email" required></input>
+            </div>
+          </div>
+          <br></br>
+          <div className="row">
+            <div className="col">
+              <input className="form-control" name="subject" type="text" placeholder="Subject" required></input>
+            </div>
+          </div>
+          <br></br>
+          <div className="row">
+            <div className="col">
+              <textarea className="form-control" rows="10" name="message" type="text" placeholder="Message" required></textarea>
+            </div>
+          </div>
+          <br></br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </div>
   );
 }

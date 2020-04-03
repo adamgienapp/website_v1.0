@@ -18,17 +18,22 @@ export default class App extends React.Component {
     return (
       <div>
         <div className="nav-bar">
-          <div className="nav-home">
-            <a href="/">Home</a>
+          <div className="name-block">
+            <span>Adam Gienapp</span>
           </div>
-          <div className="nav-projects">
-            <a href="/projects">Projects</a>
-          </div>
-          <div className="nav-resume">
-            <a href="/resume">Resume</a>
-          </div>
-          <div className="nav-contact">
-            <a href="/contact">Contact</a>
+          <div className="nav-btns">
+            <div className="nav-home">
+              <a href="/">Home</a>
+            </div>
+            <div className="nav-projects">
+              <a href="/projects">Projects</a>
+            </div>
+            <div className="nav-resume">
+              <a href="/resume">Resume</a>
+            </div>
+            <div className="nav-contact">
+              <a href="/contact">Contact</a>
+            </div>
           </div>
         </div>
         <div className="page-content">

@@ -4,7 +4,12 @@ import React from 'react';
 const Home = (props) => {
   return (
     <div className="home-page">
-      <h1>Home</h1>
+      <div className="home-title">
+        <div className="pic-window"></div>
+      </div>
+      <div className="home-about">
+        <h2>About Me</h2>
+      </div>
     </div>
   );
 }
