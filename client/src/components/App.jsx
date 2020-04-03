@@ -12,6 +12,12 @@ export default class App extends React.Component {
     this.state = {
       page: window.location.pathname
     };
+
+    this.submitHandler = this.submitHandler.bind(this);
+  }
+
+  submitHandler(e) {
+    e.preventDefault();
   }
 
   render() {
@@ -42,7 +48,7 @@ export default class App extends React.Component {
               '/': <Home />,
               '/projects/': <Projects />,
               '/resume/': <Resume />,
-              '/contact/': <Contact />,
+              '/contact/': <Contact submit={this.submitHandler}/>,
             }[this.state.page]
           }
         </div>

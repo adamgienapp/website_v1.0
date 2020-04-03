@@ -5,7 +5,7 @@ const Contact = (props) => {
   return (
     <div className="contact-page">
       <div className="contact-form-container">
-        <form className="contact-form">
+        <form className="contact-form" method="POST" encType="multipart/form-data" name="emailForm" action="form-to-email.php">
           <div className="row">
             <div className="col">
               <input className="form-control" name="name" type="text" placeholder="Full Name" required></input>
@@ -27,7 +27,7 @@ const Contact = (props) => {
             </div>
           </div>
           <br></br>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
