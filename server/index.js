@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const cors = require('cors');
 
+const nodemailer = require('nodemailer');
+const configs = require('../nodemailer.config');
+
 const port = 3000;
 const app = express();
 
@@ -10,6 +13,35 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(cors());
+
+app.post('/send', (req, res) => {
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: configs.acct,
+      pass: configs.pw
+    }
+  });
+
+  const mailOptions = {
+    from: `${req.body.email}`,
+    to: `${configs.acct}`,
+    subject: 'Message received from adamgienapp.com',
+    text: `Contact: ${req.body.name} \n
+          Email: ${req.body.email} \n
+          Subject: ${req.body.subject} \n
+          Message: ${req.body.message}`,
+    replyTo: `${req.body.email}`
+  }
+
+  transporter.sendMail(mailOptions, (err, res) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(res);
+    }
+  });
+});
 
 app.use('/', express.static(__dirname + '/../client/dist'));
 app.use('/:endpoint', express.static(__dirname + '/../client/dist'));

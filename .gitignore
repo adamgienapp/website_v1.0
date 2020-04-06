@@ -4,3 +4,6 @@ package-lock.json
 
 #Webpack
 bundle.js
+
+#Nodemailer auth
+nodemailer.config.js
