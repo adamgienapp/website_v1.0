@@ -11,6 +11,7 @@ export default class Contact extends React.Component {
       email: '',
       subject: '',
       message: '',
+      notification: '',
     };
 
     this.changeHandler = this.changeHandler.bind(this);
@@ -35,7 +36,13 @@ export default class Contact extends React.Component {
             email: '',
             subject: '',
             message: '',
-          });
+            notification: 'Thanks for reaching out!',
+          }, () => setTimeout(() => {
+              this.setState({
+                notification: ''
+              })
+            }, 3000)
+          );
         })
         .catch((err) => console.error(err));
       document.getElementById("emailForm").reset();
@@ -46,7 +53,7 @@ export default class Contact extends React.Component {
     return (
       <div className="contact-page">
         <div className="contact-form-container">
-          <form className="contact-form" encType="multipart/form-data" id="emailForm">
+          <form className="contact-form" encType="multipart/form-data" id="emailForm" onSubmit={this.submitHandler}>
             <div className="row">
               <div className="col">
                 <input className="form-control" name="name" type="text" placeholder="Full Name" required onChange={this.changeHandler}></input>
@@ -68,7 +75,7 @@ export default class Contact extends React.Component {
               </div>
             </div>
             <br></br>
-            <button type="submit" className="btn btn-primary" onClick={this.submitHandler}>Submit</button>
+            <button type="submit" className="btn btn-primary">Submit</button> <div className="submit-notification">{this.state.notification}</div>
           </form>
         </div>
       </div>

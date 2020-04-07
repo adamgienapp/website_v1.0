@@ -10,7 +10,7 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -135,3 +135,8 @@
   margin: 0 7.5% 0 7.5%;
 }
 
+.submit-notification {
+  display: inline-block;
+  margin-left: 20px;
+  font-style: italic;
+}

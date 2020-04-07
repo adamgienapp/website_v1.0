@@ -17,6 +17,7 @@ app.use(cors());
 app.post('/send', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
+    port: 465,
     auth: {
       user: configs.acct,
       pass: configs.pw
@@ -34,12 +35,13 @@ app.post('/send', (req, res) => {
     replyTo: `${req.body.email}`
   }
   
-  transporter.sendMail(mailOptions, (err, res) => {
-    if (err) {
-      console.error(err);
+  transporter.sendMail(mailOptions, (error, response) => {
+    if (error) {
+      res.status(401).send('Error sending email');
     } else {
-      console.log(res);
+      res.status(201).send('Email sent successfully');
     }
+    transporter.close();
   });
 });
 
