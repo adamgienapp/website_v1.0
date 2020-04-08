@@ -4,9 +4,7 @@
   =====================================
 */
 
-.nav-bar {
-  min-width: 550px;
-}
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -28,11 +26,30 @@
 
 }
 
+
+/*
+  =====================================
+  Global Styles
+  =====================================
+*/
+
+body {
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.btn-focus-off:focus {
+  outline: none;
+}
+
 /*
   =====================================
   Nav Bar
   =====================================
 */
+
+.navbar-nav {
+  text-align: center;
+}
 
 .nav-bar {
   display: flex;
@@ -44,7 +61,6 @@
   align-items: center;
   background-color: blanchedalmond;
   font-size: 16px;
-  font-family: 'Raleway', 'Open Sans', sans-serif;
 }
 
 .nav-bar a:link,
@@ -85,7 +101,7 @@
 */
 
 .home-page {
-  margin-top: 85px;
+  margin-top: 25px;
 }
 
 .pic-window {
@@ -107,7 +123,7 @@
 */
 
 .projects-page {
-  margin-top: 60px;
+  margin-top: 25px;
 }
 
 /*
@@ -117,7 +133,7 @@
 */
 
 .resume-page {
-  margin-top: 60px;
+  margin-top: 25px;
 }
 
 
@@ -128,7 +144,7 @@
 */
 
 .contact-page {
-  margin-top: 100px;
+  margin-top: 25px;
 }
 
 .contact-form-container {

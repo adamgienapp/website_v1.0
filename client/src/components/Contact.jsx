@@ -75,7 +75,7 @@ export default class Contact extends React.Component {
               </div>
             </div>
             <br></br>
-            <button type="submit" className="btn btn-primary">Submit</button> <div className="submit-notification">{this.state.notification}</div>
+            <button type="submit" className="btn btn-primary">Submit</button> <div className="submit-notification alert-success">{this.state.notification}</div>
           </form>
         </div>
       </div>
