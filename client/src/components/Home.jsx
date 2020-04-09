@@ -3,7 +3,7 @@ import React from 'react';
 
 const Home = (props) => {
   return (
-    <div className="home-page">
+    <div className="home-page container">
       <div className="home-title">
         <div className="pic-window"></div>
       </div>

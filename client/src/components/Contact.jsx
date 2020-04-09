@@ -51,8 +51,9 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <div className="contact-page">
+      <div className="contact-page container">
         <div className="contact-form-container">
+          <h3>Send a message</h3>
           <form className="contact-form" encType="multipart/form-data" id="emailForm" onSubmit={this.submitHandler}>
             <div className="row">
               <div className="col">
@@ -75,8 +76,21 @@ export default class Contact extends React.Component {
               </div>
             </div>
             <br></br>
-            <button type="submit" className="btn btn-primary">Submit</button> <div className="submit-notification alert-success">{this.state.notification}</div>
+            <button type="submit" className="btn btn-secondary">Send</button> <div className="submit-notification alert-success">{this.state.notification}</div>
           </form>
+        </div>
+        <div className="container social-links">
+          <h3>Connect</h3>
+          <a href="http://linkedin.com/in/adam-gienapp" target="_blank">
+              {/* <img src="linkedin-brands.svg" alt="linkedin.com/adam-gienapp" title="Adam Gienapp @ linkedin" height="60px"></img> */}
+            <i className="fa fa-linkedin-square social-link li-icon" aria-hidden="true"></i>
+          </a>
+          <a href="http://github.com/podsixisjerks" target="_blank">
+            <i className="fa fa-github-square social-link gh-icon" aria-hidden="true"></i>
+          </a>
+          <a href="http://facebook.com/adam.gienapp" target="_blank">
+            <i className="fa fa-facebook-square social-link fb-icon" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     );

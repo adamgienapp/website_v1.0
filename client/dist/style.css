@@ -4,7 +4,10 @@
   =====================================
 */
 
-
+.page-content {
+  min-width: 420px;
+  margin-top: 25px;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -100,10 +103,6 @@ body {
   =====================================
 */
 
-.home-page {
-  margin-top: 25px;
-}
-
 .pic-window {
   height: 200px;
   width: 200px;
@@ -122,9 +121,7 @@ body {
   =====================================
 */
 
-.projects-page {
-  margin-top: 25px;
-}
+
 
 /*
   =====================================
@@ -133,9 +130,8 @@ body {
 */
 
 .resume-page {
-  margin-top: 25px;
+  margin-top: -25px;
 }
-
 
 /*
   =====================================
@@ -143,12 +139,30 @@ body {
   =====================================
 */
 
-.contact-page {
-  margin-top: 25px;
+.social-links {
+  margin-top: 40px;
 }
 
-.contact-form-container {
-  margin: 0 7.5% 0 7.5%;
+.social-link {
+  font-size: 75px;
+  margin-right: 20px;
+}
+
+.social-link:hover {
+  transform: translate(-2px, -2px);
+  text-shadow: 2px 2px lightgrey;
+}
+
+.li-icon {
+  color: #0072b1;
+}
+
+.gh-icon {
+  color: #211F1F;
+}
+
+.fb-icon {
+  color: #4267b2;
 }
 
 .submit-notification {
