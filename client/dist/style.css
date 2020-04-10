@@ -109,9 +109,14 @@ body {
   =====================================
 */
 
-#top, #FEC, #SDC {
+#top {
   height: 85px;
   margin: -85px 0 0 0;
+}
+
+#FEC, #SDC {
+  height: 65px;
+  margin: -65px 0 0 0;
 }
 
 .projects-anchors {
@@ -119,6 +124,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
+  font-size: 1.1rem;
 }
 
 .project-item {
