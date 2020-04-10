@@ -76,6 +76,10 @@ body {
   cursor: pointer;
 }
 
+.nav-item {
+  text-align: center;
+}
+
 
 /*
   =====================================
