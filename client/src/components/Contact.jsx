@@ -60,22 +60,22 @@ export default class Contact extends React.Component {
           <form className="contact-form" encType="multipart/form-data" id="emailForm" onSubmit={this.submitHandler}>
             <div className="row">
               <div className="col">
-                <input className="form-control" name="name" type="text" placeholder="Full Name" required onChange={this.changeHandler}></input>
+                <input className="form-control" name="name" type="text" placeholder="Full Name (required)" required onChange={this.changeHandler}></input>
               </div>
               <div className="col">
-                <input className="form-control" name="email" type="email" placeholder="Email" required onChange={this.changeHandler}></input>
-              </div>
-            </div>
-            <br></br>
-            <div className="row">
-              <div className="col">
-                <input className="form-control" name="subject" type="text" placeholder="Subject" required onChange={this.changeHandler}></input>
+                <input className="form-control" name="email" type="email" placeholder="Email (required)" required onChange={this.changeHandler}></input>
               </div>
             </div>
             <br></br>
             <div className="row">
               <div className="col">
-                <textarea className="form-control" rows="10" name="message" type="text" placeholder="Message" required onChange={this.changeHandler}></textarea>
+                <input className="form-control" name="subject" type="text" placeholder="Subject (optional)" onChange={this.changeHandler}></input>
+              </div>
+            </div>
+            <br></br>
+            <div className="row">
+              <div className="col">
+                <textarea className="form-control" rows="10" name="message" type="text" placeholder="Message (required)" required onChange={this.changeHandler}></textarea>
               </div>
             </div>
             <br></br>
