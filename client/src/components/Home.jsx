@@ -8,7 +8,7 @@ const Home = (props) => {
         <div className="pic-window"></div>
       </div>
       <div className="home-about">
-        <h2>About Me</h2>
+        <h3>About Me</h3>
         <p className="about-me-details">
           Hi, I'm Adam! I'm a full-stack software developer with a passion for solving complex problems.
           I seek out opportunities to challenge myself, and find that's when I perform my best.
