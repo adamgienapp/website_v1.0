@@ -56,7 +56,8 @@ export default class Contact extends React.Component {
     return (
       <div className="contact-page container">
         <div className="contact-form-container">
-          <h3>Send a message</h3>
+          <h4>Send a message</h4>
+          <hr></hr>
           <form className="contact-form" encType="multipart/form-data" id="emailForm" onSubmit={this.submitHandler}>
             <div className="row">
               <div className="col">
@@ -83,7 +84,8 @@ export default class Contact extends React.Component {
           </form>
         </div>
         <div className="social-links-container">
-          <h3>Connect</h3>
+          <h4>Connect</h4>
+          <hr></hr>
           <a href="http://linkedin.com/in/adam-gienapp" target="_blank">
             <i className="fa fa-linkedin-square social-link li-icon" aria-hidden="true"></i>
           </a>

@@ -17,7 +17,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-dark" role="navigation">
           <a className="navbar-brand name-block" href="/">Adam Gienapp</a>
           <button className="navbar-toggler btn-focus-off" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

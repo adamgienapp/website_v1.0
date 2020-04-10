@@ -15,6 +15,7 @@ const Projects = (props) => {
           <a href="#encode32">Encode32</a>
         </div>
       </div>
+      <hr></hr>
       <div className="projects-list">
         <div id="FEC" className="project-item">
           <div className="project-title bg-dark">
@@ -24,13 +25,14 @@ const Projects = (props) => {
           <div className="project-image">
             <img src="Sc7qASD.gif" alt="adidas product detail page demo" text="adidas product detail page demo" width="100%"></img>
           </div>
-          <div className="project-details">
             <div className="project-tech">
-              Tech stack: React, Node + Express, MySQL + Sequelize, CircleCI, Jest + Enzyme
+              <span className="tech-title">Tech stack</span> | React, Node + Express, MySQL + Sequelize, Jest + Enzyme, CircleCI
             </div>
+            <ul className="project-details">
+              <li></li>
+            </ul>
             <a href="http://3.101.29.112/1/" target="_blank" className="project-link">Check it out</a>
             <a href="https://github.com/All-Day-I-Dream-About-Servers" target="_blank" className="project-link">Github Repo</a>
-          </div>
         </div>
         <div id="SDC" className="project-item">
           <div className="project-title bg-dark">
@@ -39,7 +41,7 @@ const Projects = (props) => {
           </div>
           <div className="project-details">
             <div className="project-tech">
-              Tech stack: React, Node + Express, MongoDB, PostgreSQL, Nginx, AWS EC2, Loader.io
+              <span className="tech-title">Tech stack</span> | React, Node + Express, MongoDB, PostgreSQL, Nginx, AWS EC2, Loader.io
             </div>
             <a href="https://github.com/10-Million-Dog-Goggles/search-bar-service" target="_blank" className="project-link">Github Repo</a>
           </div>
@@ -51,7 +53,7 @@ const Projects = (props) => {
           </div>
           <div className="project-details">
             <div className="project-tech">
-              Tech stack: React, Node + Express
+              <span className="tech-title">Tech stack</span> | React, Node + Express
             </div>
             <a href="https://github.com/10-Million-Dog-Goggles/search-bar-service" target="_blank" className="project-link">Github Repo</a>
           </div>

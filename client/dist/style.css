@@ -6,7 +6,7 @@
 
 .page-content {
   min-width: 420px;
-  margin-top: 25px;
+  margin-top: 85px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -113,27 +113,31 @@ body {
 }
 
 .project-title {
-  padding: 10px 10px 5px 10px;
+  padding: 10px 10px 1px 10px;
   border-radius: 10px 10px 0 0;
   color: white;
 }
 
 .project-item {
-  margin: 33px 0;
+  margin: 20px 0 33px 0;
 }
 
 .project-byline {
-  margin-top: -10px;
+  margin-top: -8px;
   font-weight: 300;
   font-style: italic;
 }
 
-.project-details {
-
+.project-tech {
+  margin-top: 10px;
 }
 
-.project-tech {
+.tech-title {
+  font-weight: 700;
+}
 
+.project-details {
+  margin-top: 5px;
 }
 
 .project-link {
@@ -147,7 +151,7 @@ body {
 */
 
 .resume-page {
-  margin-top: -25px;
+  margin-top: -30px;
 }
 
 /*
