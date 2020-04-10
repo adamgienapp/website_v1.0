@@ -79,7 +79,7 @@ export default class Contact extends React.Component {
             <button type="submit" className="btn btn-secondary">Send</button> <div className="submit-notification alert-success">{this.state.notification}</div>
           </form>
         </div>
-        <div className="container social-links">
+        <div className="social-links-container">
           <h3>Connect</h3>
           <a href="http://linkedin.com/in/adam-gienapp" target="_blank">
               {/* <img src="linkedin-brands.svg" alt="linkedin.com/adam-gienapp" title="Adam Gienapp @ linkedin" height="60px"></img> */}
