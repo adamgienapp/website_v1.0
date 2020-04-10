@@ -6,31 +6,55 @@ const Projects = (props) => {
     <div className="projects-page container">
       <div className="projects-anchors">
         <div>
-          <a href="#FEC">FEC</a>
+          <a href="#FEC">All Day I Dream About Servers</a>
         </div>
         <div>
-          <a href="#SDC">SDC</a>
+          <a href="#SDC">REI Search Bar System Design</a>
         </div>
         <div>
           <a href="#encode32">Encode32</a>
         </div>
       </div>
       <div className="projects-list">
-        <div id="FEC">
-          <div>
-            Tech stack: React, Node + Express, MySQL + Sequelize, CircleCI, Jest + Enzyme
+        <div id="FEC" className="project-item">
+          <div className="project-title bg-dark">
+            <h4>All Day I Dream About Servers</h4>
+            <h6 className="project-byline">An adidas product detail page mock-up</h6>
           </div>
-          <a href="http://3.101.29.112/1/" target="_blank">Check it out</a>
-          <a href="https://github.com/All-Day-I-Dream-About-Servers" target="_blank">Github Repo</a>
-        </div>
-        <div id="SDC">
-          <div>
-            Tech stack: React, Node + Express, PostgreSQL, Nginx, AWS EC2, Loader.io
+          <div className="project-image">
+            <img src="Sc7qASD.gif" alt="adidas product detail page demo" text="adidas product detail page demo" width="100%"></img>
           </div>
-          <a href="https://github.com/10-Million-Dog-Goggles/search-bar-service" target="_blank">Github Repo</a>
+          <div className="project-details">
+            <div className="project-tech">
+              Tech stack: React, Node + Express, MySQL + Sequelize, CircleCI, Jest + Enzyme
+            </div>
+            <a href="http://3.101.29.112/1/" target="_blank" className="project-link">Check it out</a>
+            <a href="https://github.com/All-Day-I-Dream-About-Servers" target="_blank" className="project-link">Github Repo</a>
+          </div>
         </div>
-        <div id="encode32">
-
+        <div id="SDC" className="project-item">
+          <div className="project-title bg-dark">
+            <h4>REI Search Bar System Design</h4>
+            <h6 className="project-byline">Scaling the back-end of an inherited web app microservice</h6>
+          </div>
+          <div className="project-details">
+            <div className="project-tech">
+              Tech stack: React, Node + Express, MongoDB, PostgreSQL, Nginx, AWS EC2, Loader.io
+            </div>
+            <a href="https://github.com/10-Million-Dog-Goggles/search-bar-service" target="_blank" className="project-link">Github Repo</a>
+          </div>
+        </div>
+        <div id="encode32" className="project-item">
+          <div className="project-title bg-dark">
+            <h4>Encode32</h4>
+            <h6 className="project-byline">Generate and decode encrypted messages</h6>
+          </div>
+          <div className="project-details">
+            <div className="project-tech">
+              Tech stack: React, Node + Express
+            </div>
+            <a href="https://github.com/10-Million-Dog-Goggles/search-bar-service" target="_blank" className="project-link">Github Repo</a>
+          </div>
         </div>
       </div>
     </div>
