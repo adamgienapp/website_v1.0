@@ -51,7 +51,7 @@ export default class App extends React.Component {
             ||
             <div className="bad-page">
               <p>
-                Looks like you found a page that doesn't exist, or is under construction...
+                Looks like you've found a page that doesn't exist, or is under construction...
                 <br/>Try sticking to the navigation links ;)
               </p>
             </div>
