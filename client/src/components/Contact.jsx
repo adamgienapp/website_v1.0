@@ -12,6 +12,7 @@ export default class Contact extends React.Component {
       subject: '',
       message: '',
       notification: '',
+      notificationStyle: { display: 'none' }
     };
 
     this.changeHandler = this.changeHandler.bind(this);
@@ -36,10 +37,12 @@ export default class Contact extends React.Component {
             email: '',
             subject: '',
             message: '',
-            notification: 'Thanks for reaching out!',
+            notification: 'Message sent. Thanks for reaching out!',
+            notificationStyle: { display: 'inline-block' }
           }, () => setTimeout(() => {
               this.setState({
-                notification: ''
+                notification: '',
+                notificationStyle: { display: 'none' }
               })
             }, 3000)
           );
@@ -76,13 +79,12 @@ export default class Contact extends React.Component {
               </div>
             </div>
             <br></br>
-            <button type="submit" className="btn btn-secondary">Send</button> <div className="submit-notification alert-success">{this.state.notification}</div>
+            <button type="submit" className="btn btn-secondary">Send</button> <div className="submit-notification alert alert-success" style={this.state.notificationStyle}>{this.state.notification}</div>
           </form>
         </div>
         <div className="social-links-container">
           <h3>Connect</h3>
           <a href="http://linkedin.com/in/adam-gienapp" target="_blank">
-              {/* <img src="linkedin-brands.svg" alt="linkedin.com/adam-gienapp" title="Adam Gienapp @ linkedin" height="60px"></img> */}
             <i className="fa fa-linkedin-square social-link li-icon" aria-hidden="true"></i>
           </a>
           <a href="http://github.com/podsixisjerks" target="_blank">

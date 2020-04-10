@@ -44,6 +44,13 @@ body {
   outline: none;
 }
 
+.bad-page {
+  text-align: center;
+  font-size: 19px;
+  font-style: italic;
+  color: firebrick;
+}
+
 /*
   =====================================
   Nav Bar
@@ -170,7 +177,7 @@ body {
 }
 
 .submit-notification {
-  display: inline-block;
+  position: absolute;
   margin-left: 20px;
   font-style: italic;
 }
