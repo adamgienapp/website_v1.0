@@ -191,6 +191,37 @@ body {
   border-radius: 0 0 10px 10px;
 }
 
+/* SDC image carousel indicator colors */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+  opacity: 0.69;
+}
+
+.carousel-control-prev {
+  left: -25px;
+  top: -35px;
+}
+
+.carousel-control-next {
+  right: -25px;
+  top: -35px;
+}
+
+.carousel-indicators {
+  bottom: -25px !important;
+}
+
+.carousel-indicators li {
+  background-color: #999 !important;
+  background-color: rgba(70, 70, 70, 0.25) !important;
+}
+
+.carousel-indicators .active {
+  background-color: #444 !important;
+}
+
+
 /*
   =====================================
   Resume

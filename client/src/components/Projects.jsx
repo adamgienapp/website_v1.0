@@ -50,7 +50,32 @@ const Projects = (props) => {
             <h6 className="project-byline">Scaling the back-end of a pre-existing web app microservice</h6>
           </div>
           <div className="project-image">
-            <img className="project-image" src="Sc7qASD.gif" alt="system design engineering journal snippets" text="system design engineering journal snippets" width="100%"></img>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="3000" data-pause="hover" data-touch="true">
+                  <img src="sdc_1.svg" class="d-block w-100" alt="System performance with 1 EC2 server" text="System performance with 1 EC2 server"></img>
+                </div>
+                <div class="carousel-item" data-interval="3000" data-pause="hover" data-touch="true">
+                  <img src="sdc_2.svg" class="d-block w-100" alt="System performance with 2 EC2 servers behind Nginx load balancer" text="System performance with 2 EC2 servers behind Nginx load balancer"></img>
+                </div>
+                <div class="carousel-item" data-interval="3000" data-pause="hover" data-touch="true">
+                  <img src="sdc_3.svg" class="d-block w-100" alt="System performance with 4 EC2 servers behind Nginx load balancer" text="System performance with 4 EC2 servers behind Nginx load balancer"></img>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
           <div className="project-description">
             <div className="project-tech">
