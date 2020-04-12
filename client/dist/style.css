@@ -6,7 +6,8 @@
 
 .page-content {
   min-width: 420px;
-  margin-top: 85px;
+  /* margin-top value for fixed navbar: 85px*/
+  margin-top: 25px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -109,14 +110,16 @@ body {
   =====================================
 */
 
+/* Values for a fixed nav bar: 25 -> 85px */
 #top {
   height: 85px;
   margin: -85px 0 0 0;
 }
 
+/* Values for fixed nav bar: +/-65px */
 #FEC, #SDC {
-  height: 65px;
-  margin: -65px 0 0 0;
+  height: 5px;
+  margin: -15px 0 0 0;
 }
 
 .projects-anchors {
