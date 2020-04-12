@@ -25,7 +25,7 @@ const Projects = (props) => {
             <h6 className="project-byline">An adidas product detail page mock-up</h6>
           </div>
           <div className="project-image">
-            <img className="project-image" src="Sc7qASD.gif" alt="adidas product detail page demo" text="adidas product detail page demo" width="100%"></img>
+            <img className="project-image" src="./img/Sc7qASD.gif" alt="adidas product detail page demo" text="adidas product detail page demo" width="100%"></img>
           </div>
           <div className="project-description">
             <div className="project-tech">
@@ -58,13 +58,13 @@ const Projects = (props) => {
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="3000" data-pause="hover" data-touch="true">
-                  <img src="sdc_1.svg" class="d-block w-100" alt="System performance with 1 EC2 server" text="System performance with 1 EC2 server"></img>
+                  <img src="./img/sdc_1.svg" class="d-block w-100" alt="System performance with 1 EC2 server" text="System performance with 1 EC2 server"></img>
                 </div>
                 <div class="carousel-item" data-interval="3000" data-pause="hover" data-touch="true">
-                  <img src="sdc_2.svg" class="d-block w-100" alt="System performance with 2 EC2 servers behind Nginx load balancer" text="System performance with 2 EC2 servers behind Nginx load balancer"></img>
+                  <img src="./img/sdc_2.svg" class="d-block w-100" alt="System performance with 2 EC2 servers behind Nginx load balancer" text="System performance with 2 EC2 servers behind Nginx load balancer"></img>
                 </div>
                 <div class="carousel-item" data-interval="3000" data-pause="hover" data-touch="true">
-                  <img src="sdc_3.svg" class="d-block w-100" alt="System performance with 4 EC2 servers behind Nginx load balancer" text="System performance with 4 EC2 servers behind Nginx load balancer"></img>
+                  <img src="./img/sdc_3.svg" class="d-block w-100" alt="System performance with 4 EC2 servers behind Nginx load balancer" text="System performance with 4 EC2 servers behind Nginx load balancer"></img>
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
