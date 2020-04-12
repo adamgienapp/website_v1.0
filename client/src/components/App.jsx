@@ -41,21 +41,21 @@ export default class App extends React.Component {
           </div>
         </nav>
         <div className="page-content">
-          {
-            { 
-              '/': <Home />,
-              '/projects/': <Projects />,
-              '/resume/': <Resume />,
-              '/contact/': <Contact/>,
-            }[this.state.page]
-            ||
-            <div className="bad-page">
-              <p>
-                Looks like you've found a page that doesn't exist, or is under construction...
-                <br/>Try sticking to the navigation links ;)
-              </p>
-            </div>
-          }
+            {
+              { 
+                '/': <Home />,
+                '/projects/': <Projects />,
+                '/resume/': <Resume />,
+                '/contact/': <Contact/>,
+              }[this.state.page]
+              ||
+              <div className="bad-page">
+                <p>
+                  Looks like you've found a page that doesn't exist, or is under construction...
+                  <br/>Try sticking to the navigation links ;)
+                </p>
+              </div>
+            }
         </div>
       </div>
     );

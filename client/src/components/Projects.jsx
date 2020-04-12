@@ -50,30 +50,30 @@ const Projects = (props) => {
             <h6 className="project-byline">Scaling the back-end of a pre-existing web app microservice</h6>
           </div>
           <div className="project-image">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+              <ol className="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
               </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="3000" data-pause="hover" data-touch="true">
-                  <img src="./img/sdc_1.svg" class="d-block w-100" alt="System performance with 1 EC2 server" text="System performance with 1 EC2 server"></img>
+              <div className="carousel-inner">
+                <div className="carousel-item active" data-interval="3000" data-pause="hover" data-touch="true">
+                  <img src="./img/sdc_1.svg" className="d-block w-100" alt="System performance with 1 EC2 server" text="System performance with 1 EC2 server"></img>
                 </div>
-                <div class="carousel-item" data-interval="3000" data-pause="hover" data-touch="true">
-                  <img src="./img/sdc_2.svg" class="d-block w-100" alt="System performance with 2 EC2 servers behind Nginx load balancer" text="System performance with 2 EC2 servers behind Nginx load balancer"></img>
+                <div className="carousel-item" data-interval="3000" data-pause="hover" data-touch="true">
+                  <img src="./img/sdc_2.svg" className="d-block w-100" alt="System performance with 2 EC2 servers behind Nginx load balancer" text="System performance with 2 EC2 servers behind Nginx load balancer"></img>
                 </div>
-                <div class="carousel-item" data-interval="3000" data-pause="hover" data-touch="true">
-                  <img src="./img/sdc_3.svg" class="d-block w-100" alt="System performance with 4 EC2 servers behind Nginx load balancer" text="System performance with 4 EC2 servers behind Nginx load balancer"></img>
+                <div className="carousel-item" data-interval="3000" data-pause="hover" data-touch="true">
+                  <img src="./img/sdc_3.svg" className="d-block w-100" alt="System performance with 4 EC2 servers behind Nginx load balancer" text="System performance with 4 EC2 servers behind Nginx load balancer"></img>
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+              <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+              <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
               </a>
             </div>
           </div>
