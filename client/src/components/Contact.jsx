@@ -80,7 +80,8 @@ export default class Contact extends React.Component {
               </div>
             </div>
             <br></br>
-            <button type="submit" className="btn btn-dark">Send</button> <div className="submit-notification alert alert-success" style={this.state.notificationStyle}>{this.state.notification}</div>
+            <button type="submit" className="btn btn-dark">Send</button>
+            <div className="submit-notification alert alert-success" style={this.state.notificationStyle}>{this.state.notification}</div>
           </form>
         </div>
         <div className="social-links-container">

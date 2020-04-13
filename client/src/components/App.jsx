@@ -6,6 +6,7 @@ import Contact from './Contact';
 import ReactLoading from 'react-loading';
 import FadeIn from 'react-fade-in';
 
+
 export default class App extends React.Component {
   constructor(props) {
     super(props)
