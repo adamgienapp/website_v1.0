@@ -246,6 +246,13 @@ body {
   margin-top: -30px;
 }
 
+.resume-obj {
+  display: block;
+  width: 100%;
+  height: 800px;
+  -webkit-overflow-scrolling: touch
+}
+
 /*
   =====================================
   Contact
