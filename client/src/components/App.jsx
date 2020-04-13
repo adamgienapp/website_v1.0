@@ -64,18 +64,32 @@ export default class App extends React.Component {
               )
               :
               { 
-                '/': <Home />,
-                '/projects/': <Projects />,
-                '/resume/': <Resume />,
-                '/contact/': <Contact/>,
+                '/':
+                <FadeIn>
+                  <Home />
+                </FadeIn>,
+                '/projects/': 
+                  <FadeIn>
+                    <Projects />
+                  </FadeIn>,
+                '/resume/':
+                <FadeIn>
+                  <Resume />
+                </FadeIn>,
+                '/contact/': 
+                <FadeIn>
+                  <Contact/>
+                </FadeIn>,
               }[this.state.page]
               ||
-              <div className="bad-page">
-                <p>
-                  Looks like you've found a page that doesn't exist, or is under construction...
-                  <br/>Try sticking to the navigation links ;)
-                </p>
-              </div>
+              <FadeIn>
+                <div className="bad-page">
+                  <p>
+                    Looks like you've found a page that doesn't exist, or is under construction...
+                    <br/>Try sticking to the navigation links ;)
+                  </p>
+                </div>
+              </FadeIn>
             }
         </div>
       </div>
