@@ -7,10 +7,18 @@ const Projects = (props) => {
       <div id="top"/>
       <div className="projects-anchors">
         <div>
-          <a href="#FEC">All Day I Dream About Servers</a>
+          <a href="#FEC">
+            <span className="project-anchor-text">All Day I Dream</span>
+            <span className="project-anchor-space">&nbsp;</span>
+            <span className="project-anchor-text">About Servers</span>
+          </a>
         </div>
         <div>
-          <a href="#SDC">REI Search Bar System Design</a>
+          <a href="#SDC">
+            <span className="project-anchor-text">REI Search Bar</span>
+            <span className="project-anchor-space">&nbsp;</span>
+            <span className="project-anchor-text">System Design</span>
+          </a>
         </div>
         {/* <div>
           <a href="#encode32">Encode32</a>
