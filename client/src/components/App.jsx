@@ -3,6 +3,7 @@ import Home from './Home';
 import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
+import ReactLoading from 'react-loading';
 
 
 export default class App extends React.Component {
@@ -10,8 +11,20 @@ export default class App extends React.Component {
     super(props)
 
     this.state = {
-      page: window.location.pathname
+      page: window.location.pathname,
+      loading: true,
     };
+  }
+
+  componentDidMount() {
+    setTimeout(
+      () => {
+        this.setState({
+          loading: false
+        });
+      },
+      1000
+    );
   }
 
   render() {
@@ -41,7 +54,13 @@ export default class App extends React.Component {
           </div>
         </nav>
         <div className="page-content">
-            {
+            { this.state.loading ? 
+              (
+                <div className="container">
+                  <ReactLoading type={"bars"} color={"#343a40"} style={{margin: "30% auto", height: "25%", width: "25%"}}/>
+                </div>
+              )
+              :
               { 
                 '/': <Home />,
                 '/projects/': <Projects />,
