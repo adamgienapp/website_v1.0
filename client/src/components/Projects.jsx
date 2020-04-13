@@ -33,7 +33,7 @@ const Projects = (props) => {
             <h6 className="project-byline">An adidas product detail page mock-up</h6>
           </div>
           <div className="project-image">
-            <img className="project-image" src="./img/Sc7qASD.gif" alt="adidas product detail page demo" text="adidas product detail page demo" width="100%"></img>
+            <img className="project-image" src="https://i.imgur.com/Sc7qASD.gif" alt="adidas product detail page demo" text="adidas product detail page demo" width="100%"></img>
           </div>
           <div className="project-description">
             <div className="project-tech">
