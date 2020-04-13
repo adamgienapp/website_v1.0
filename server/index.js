@@ -6,7 +6,7 @@ const cors = require('cors');
 const nodemailer = require('nodemailer');
 const configs = require('../nodemailer.config');
 
-const port = 3000;
+const port = 80;
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
