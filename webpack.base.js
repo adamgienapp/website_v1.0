@@ -9,7 +9,6 @@ module.exports = {
     path: path.resolve(__dirname, './client/dist'),
     filename: 'bundle.js',
   },
-  mode: 'development',
   module: {
     rules: [
       {
