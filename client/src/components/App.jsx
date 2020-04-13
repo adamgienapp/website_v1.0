@@ -4,7 +4,7 @@ import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
 import ReactLoading from 'react-loading';
-
+import FadeIn from 'react-fade-in';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -57,7 +57,9 @@ export default class App extends React.Component {
             { this.state.loading ? 
               (
                 <div className="container">
-                  <ReactLoading type={"bars"} color={"#343a40"} style={{margin: "30% auto", height: "25%", width: "25%"}}/>
+                  <FadeIn>
+                    <ReactLoading type={"bars"} color={"#343a40"} style={{margin: "30% auto", height: "25%", width: "25%"}}/>
+                  </FadeIn>
                 </div>
               )
               :
