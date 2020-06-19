@@ -24,7 +24,7 @@ export default class App extends React.Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-          <a className="navbar-brand name-block" href="/">Adam Gienapp</a>
+          <Link className="navbar-brand name-block" to="/">Adam Gienapp</Link>
           <button className="navbar-toggler btn-focus-off" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -54,10 +54,10 @@ export default class App extends React.Component {
                 // </div>
               }
           <Switch>
-            <Route exact path="/" component={<Home/>} />
-            <Route path="/projects" component={<Projects/>} />
-            <Route path="/resume" component={<Resume/>} />
-            <Route path="/contact" component={<Contact/>} />
+            <Route exact path="/" component={Home} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/contact" component={Contact} />
             <Route render={() => <Redirect to="/" />} />
           </Switch>
         </div>
