@@ -1,10 +1,14 @@
+// Packages
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import ReactLoading from 'react-loading';
+import FadeIn from 'react-fade-in';
+// Components
 import Home from './Home';
 import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
-import ReactLoading from 'react-loading';
-import FadeIn from 'react-fade-in';
+
 
 
 export default class App extends React.Component {
@@ -15,17 +19,6 @@ export default class App extends React.Component {
       page: window.location.pathname,
       loading: true,
     };
-  }
-
-  componentDidMount() {
-    setTimeout(
-      () => {
-        this.setState({
-          loading: false
-        });
-      },
-      1000
-    );
   }
 
   render() {
