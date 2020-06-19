@@ -1,6 +1,6 @@
 // Packages
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import ReactLoading from 'react-loading';
 import FadeIn from 'react-fade-in';
 // Components
@@ -8,7 +8,6 @@ import Home from './Home';
 import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
-
 
 
 export default class App extends React.Component {
@@ -33,58 +32,34 @@ export default class App extends React.Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/">Home</a>
+                <Link className="nav-link" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/projects">Projects</a>
+                <Link className="nav-link" to="/projects">Projects</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/resume">Resume</a>
+                <Link className="nav-link" to="/resume">Resume</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">Contact</a>
+                <Link className="nav-link" to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
         </nav>
         <div className="page-content">
-            { this.state.loading ? 
-              (
-                <div className="container">
-                  <FadeIn>
-                    <ReactLoading type={"bars"} color={"#343a40"} style={{margin: "30% auto", height: "25%", width: "25%"}}/>
-                  </FadeIn>
-                </div>
-              )
-              :
-              { 
-                '/':
-                <FadeIn>
-                  <Home />
-                </FadeIn>,
-                '/projects/': 
-                  <FadeIn>
-                    <Projects />
-                  </FadeIn>,
-                '/resume/':
-                <FadeIn>
-                  <Resume />
-                </FadeIn>,
-                '/contact/': 
-                <FadeIn>
-                  <Contact/>
-                </FadeIn>,
-              }[this.state.page]
-              ||
-              <FadeIn>
-                <div className="bad-page">
-                  <p>
-                    Looks like you've found a page that doesn't exist, or is under construction...
-                    <br/>Try sticking to the navigation links ;)
-                  </p>
-                </div>
-              </FadeIn>
-            }
+                {// <div className="container">
+                //   <FadeIn>
+                //     <ReactLoading type={"bars"} color={"#343a40"} style={{margin: "30% auto", height: "25%", width: "25%"}}/>
+                //   </FadeIn>
+                // </div>
+              }
+          <Switch>
+            <Route exact path="/" component={<Home/>} />
+            <Route path="/projects" component={<Projects/>} />
+            <Route path="/resume" component={<Resume/>} />
+            <Route path="/contact" component={<Contact/>} />
+            <Route render={() => <Redirect to="/" />} />
+          </Switch>
         </div>
       </div>
     );
