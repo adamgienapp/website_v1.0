@@ -1,8 +1,6 @@
 // Packages
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
-// import ReactLoading from 'react-loading';
-// import FadeIn from 'react-fade-in';
 // Components
 import Home from './Home';
 import Projects from './Projects';
@@ -12,8 +10,11 @@ import Contact from './Contact';
 
 const App = (props) => {
   useEffect(() => {
-    const img = new Image();
-    img.src = "https://i.imgur.com/Sc7qASD.gif";
+    const imgURLs = ["https://i.imgur.com/Sc7qASD.gif", "/img/sdc_1.svg", "/img/sdc_2.svg", "/img/sdc_3.svg"]
+    imgURLs.forEach((url) => {
+      const img = new Image();
+      img.src = url;
+    })
   }, []);
 
   return (
@@ -43,13 +44,6 @@ const App = (props) => {
       </nav>
 
       <div className="page-content">
-        {
-          // <div className="container">
-          //   <FadeIn>
-          //     <ReactLoading type={"bars"} color={"#343a40"} style={{margin: "30% auto", height: "25%", width: "25%"}}/>
-          //   </FadeIn>
-          // </div>
-        }
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
@@ -63,3 +57,12 @@ const App = (props) => {
 }
 
 export default App;
+
+
+// import ReactLoading from 'react-loading';
+// import FadeIn from 'react-fade-in';
+  // <div className="container">
+  //   <FadeIn>
+  //     <ReactLoading type={"bars"} color={"#343a40"} style={{margin: "30% auto", height: "25%", width: "25%"}}/>
+  //   </FadeIn>
+  // </div>
