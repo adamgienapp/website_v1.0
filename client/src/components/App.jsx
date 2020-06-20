@@ -1,5 +1,5 @@
 // Packages
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 // import ReactLoading from 'react-loading';
 // import FadeIn from 'react-fade-in';
@@ -11,6 +11,11 @@ import Contact from './Contact';
 
 
 const App = (props) => {
+  useEffect(() => {
+    const img = new Image();
+    img.src = "https://i.imgur.com/Sc7qASD.gif";
+  }, []);
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
@@ -36,7 +41,7 @@ const App = (props) => {
           </ul>
         </div>
       </nav>
-      
+
       <div className="page-content">
         {
           // <div className="container">
