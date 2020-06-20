@@ -45,12 +45,6 @@ body {
   outline: none;
 }
 
-.bad-page {
-  text-align: center;
-  font-size: 19px;
-  font-style: italic;
-  color: firebrick;
-}
 
 /*
   =====================================
@@ -125,7 +119,7 @@ body {
 }
 
 /* Values for fixed nav bar: +/-65px */
-#FEC, #SDC {
+#FEC, #SDC, #scratchTrack {
   height: 5px;
   margin: -15px 0 0 0;
 }
@@ -135,10 +129,10 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .project-anchor-text {
     display: block;
   }
