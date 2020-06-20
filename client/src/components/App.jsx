@@ -17,6 +17,11 @@ const App = (props) => {
     })
   }, []);
 
+  const toggleDropdown = () => {
+    const nav = $('.navbar-collapse');
+    nav.collapse('hide');
+  }
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
@@ -25,19 +30,19 @@ const App = (props) => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" data-toggle="collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/" onClick={toggleDropdown}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/projects">Projects</Link>
+              <Link className="nav-link" to="/projects" onClick={toggleDropdown}>Projects</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/resume">Resume</Link>
+              <Link className="nav-link" to="/resume" onClick={toggleDropdown}>Resume</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/contact" onClick={toggleDropdown}>Contact</Link>
             </li>
           </ul>
         </div>

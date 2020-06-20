@@ -1,4 +1,5 @@
 import React from 'react';
+import FadeIn from 'react-fade-in';
 import axios from 'axios';
 
 
@@ -55,48 +56,53 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div className="contact-page container">
-        <div className="contact-form-container">
-          <h4>Send a message</h4>
-          <hr></hr>
-          <form className="contact-form" encType="multipart/form-data" id="emailForm" onSubmit={this.submitHandler}>
-            <div className="row">
-              <div className="col">
-                <input className="form-control" name="name" type="text" placeholder="Full Name (required)" required onChange={this.changeHandler}></input>
+        <FadeIn>
+          <div className="contact-form-container">
+            <h4>Send a message</h4>
+            <hr></hr>
+            <form className="contact-form" encType="multipart/form-data" id="emailForm" onSubmit={this.submitHandler}>
+              <div className="row">
+                <div className="col">
+                  <input className="form-control" name="name" type="text" placeholder="Full Name (required)" required onChange={this.changeHandler}></input>
+                </div>
+                <div className="col">
+                  <input className="form-control" name="email" type="email" placeholder="Email (required)" required onChange={this.changeHandler}></input>
+                </div>
               </div>
-              <div className="col">
-                <input className="form-control" name="email" type="email" placeholder="Email (required)" required onChange={this.changeHandler}></input>
+              <br></br>
+              <div className="row">
+                <div className="col">
+                  <input className="form-control" name="subject" type="text" placeholder="Subject (optional)" onChange={this.changeHandler}></input>
+                </div>
               </div>
-            </div>
-            <br></br>
-            <div className="row">
-              <div className="col">
-                <input className="form-control" name="subject" type="text" placeholder="Subject (optional)" onChange={this.changeHandler}></input>
+              <br></br>
+              <div className="row">
+                <div className="col">
+                  <textarea className="form-control" rows="10" name="message" type="text" placeholder="Message (required)" required onChange={this.changeHandler}></textarea>
+                </div>
               </div>
-            </div>
-            <br></br>
-            <div className="row">
-              <div className="col">
-                <textarea className="form-control" rows="10" name="message" type="text" placeholder="Message (required)" required onChange={this.changeHandler}></textarea>
-              </div>
-            </div>
-            <br></br>
-            <button type="submit" className="btn btn-dark">Send</button>
-            <div className="submit-notification alert alert-success" style={this.state.notificationStyle}>{this.state.notification}</div>
-          </form>
-        </div>
-        <div className="social-links-container">
-          <h4>Connect</h4>
-          <hr></hr>
-          <a href="http://linkedin.com/in/adam-gienapp" target="_blank">
-            <i className="fa fa-linkedin-square social-link li-icon" aria-hidden="true"></i>
-          </a>
-          <a href="http://github.com/podsixisjerks" target="_blank">
-            <i className="fa fa-github-square social-link gh-icon" aria-hidden="true"></i>
-          </a>
-          <a href="http://facebook.com/adam.gienapp" target="_blank">
-            <i className="fa fa-facebook-square social-link fb-icon" aria-hidden="true"></i>
-          </a>
-        </div>
+              <br></br>
+              <button type="submit" className="btn btn-dark">Send</button>
+              <div className="submit-notification alert alert-success" style={this.state.notificationStyle}>{this.state.notification}</div>
+            </form>
+          </div>
+        </FadeIn>
+
+        <FadeIn>
+          <div className="social-links-container">
+            <h4>Connect</h4>
+            <hr></hr>
+            <a href="http://linkedin.com/in/adam-gienapp" target="_blank">
+              <i className="fa fa-linkedin-square social-link li-icon" aria-hidden="true"></i>
+            </a>
+            <a href="http://github.com/adamgienapp" target="_blank">
+              <i className="fa fa-github-square social-link gh-icon" aria-hidden="true"></i>
+            </a>
+            <a href="http://facebook.com/adam.gienapp" target="_blank">
+              <i className="fa fa-facebook-square social-link fb-icon" aria-hidden="true"></i>
+            </a>
+          </div>
+        </FadeIn>
       </div>
     );
   };
