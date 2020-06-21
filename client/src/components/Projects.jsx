@@ -42,20 +42,38 @@ const Projects = (props) => {
       
       <FadeIn>
         <div className="projects-list">
-          <div id="ScratchTrack"/>
+          <div id="ScratchTrack" className="anchor"/>
           <div className="project-item">
             <div className="project-title bg-dark">
               <h4>ScratchTrack Web App</h4>
-              <h6 className="project-byline"></h6>
+              <h6 className="project-byline">A web companion to the ScratchTrack mobile app</h6>
             </div>
+
+            <div className="project-description">
+              <div className="project-tech">
+                <span className="tech-title">Tech stack</span> | React, SASS, Firebase
+              </div>
+              <ul className="project-details">
+                <li>Inherited a pre-existing search bar microservice that generates auto-complete suggestions from a database of products</li>
+                <li>Expanded database size from 100 to 10M entries, optimized database to reduce worst-case query time from 31 seconds to 2 seconds</li>
+                <li>Horizontally scaled the back-end to increase throughput from 750 RPS to 3750 RPS with &lt; 1{"%"} error rate</li>
+              </ul>
+              <div className="project-links">
+                <a href="https://scratchtrack.co" target="_blank" className="project-link">Check it out</a>
+                <a href="#top">Back to top</a>
+              </div>
+            </div>
+
+            <div className="project-footer bg-dark"/>
           </div>
 
-          <div id="SDC"/>
+          <div id="SDC" className="anchor"/>
           <div className="project-item">
             <div className="project-title bg-dark">
               <h4>REI Search Bar System Design</h4>
               <h6 className="project-byline">Scaling the back-end of a pre-existing web app microservice</h6>
             </div>
+
             <div className="project-image">
               <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
@@ -84,6 +102,7 @@ const Projects = (props) => {
                 </a>
               </div>
             </div>
+
             <div className="project-description">
               <div className="project-tech">
                 <span className="tech-title">Tech stack</span> | React, Node + Express, MongoDB, PostgreSQL, Nginx, AWS EC2, Loader.io
@@ -98,18 +117,21 @@ const Projects = (props) => {
                 <a href="#top">Back to top</a>
               </div>
             </div>
+
             <div className="project-footer bg-dark"/>
           </div>
 
-          <div id="FEC"/>
+          <div id="FEC" className="anchor"/>
           <div className="project-item">
             <div className="project-title bg-dark">
               <h4>All Day I Dream About Servers</h4>
               <h6 className="project-byline">An adidas product detail page mock-up</h6>
             </div>
+
             <div className="project-image">
               <img className="project-image" src="https://i.imgur.com/Sc7qASD.gif" alt="adidas product detail page demo" text="adidas product detail page demo" width="100%"></img>
             </div>
+
             <div className="project-description">
               <div className="project-tech">
                 <span className="tech-title">Tech stack</span> | React, Node + Express, MySQL + Sequelize, Jest + Enzyme, CircleCI
@@ -124,6 +146,7 @@ const Projects = (props) => {
                 <a href="#top">Back to top</a>
               </div>
             </div>
+
             <div className="project-footer bg-dark"/>
           </div>
           {/* <div id="encode32" className="project-item">
