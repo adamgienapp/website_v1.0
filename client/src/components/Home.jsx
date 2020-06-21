@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ReactLoading from 'react-loading';
 import FadeIn from 'react-fade-in';
 
 
@@ -17,7 +16,7 @@ const Home = (props) => {
     {loading ?
     <div className="container">
       <FadeIn>
-        <ReactLoading type={"bars"} color={"#343a40"} style={{margin: "30% auto", height: "25%", width: "25%"}}/>
+        <div className="loader"></div>
       </FadeIn>
     </div>
     :
