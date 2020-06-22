@@ -1,6 +1,6 @@
 // Packages
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
+import { Switch, Route, Redirect, Link } from 'react-router-dom';
 // Components
 import Home from './Home';
 import Projects from './Projects';
@@ -62,12 +62,3 @@ const App = (props) => {
 }
 
 export default App;
-
-
-// import ReactLoading from 'react-loading';
-// import FadeIn from 'react-fade-in';
-  // <div className="container">
-  //   <FadeIn>
-  //     <ReactLoading type={"bars"} color={"#343a40"} style={{margin: "30% auto", height: "25%", width: "25%"}}/>
-  //   </FadeIn>
-  // </div>
