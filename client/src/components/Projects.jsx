@@ -57,9 +57,8 @@ const Projects = (props) => {
                 <span className="tech-title">Tech stack</span> | React, SASS, Firebase
               </div>
               <ul className="project-details">
-                <li>Inherited a pre-existing search bar microservice that generates auto-complete suggestions from a database of products</li>
-                <li>Expanded database size from 100 to 10M entries, optimized database to reduce worst-case query time from 31 seconds to 2 seconds</li>
-                <li>Horizontally scaled the back-end to increase throughput from 750 RPS to 3750 RPS with &lt; 1{"%"} error rate</li>
+                <li>Fully owned web app development, built from provided UI mockups and feature specifications</li>
+                <li>Integrated pre-existing Firebase back-end to handle authentication, storage, and deployment/hosting</li>
               </ul>
               <div className="project-links">
                 <a href="https://scratchtrack.co" target="_blank" className="project-link">Check it out</a>
