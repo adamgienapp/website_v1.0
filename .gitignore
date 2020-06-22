@@ -7,3 +7,6 @@ bundle.js
 
 #Nodemailer auth
 nodemailer.config.js
+
+#Firebase
+env.js
