@@ -10,7 +10,7 @@ import Contact from './Contact';
 
 const App = (props) => {
   useEffect(() => {
-    const imgURLs = ["https://i.imgur.com/Sc7qASD.gif", "/img/sdc_1.svg", "/img/sdc_2.svg", "/img/sdc_3.svg"]
+    const imgURLs = ["https://i.imgur.com/Sc7qASD.gif", "/img/sdc_1.svg", "/img/sdc_2.svg", "/img/sdc_3.svg", "/img/scratchtrack_demo.gif"]
     imgURLs.forEach((url) => {
       const img = new Image();
       img.src = url;

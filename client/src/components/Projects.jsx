@@ -48,6 +48,10 @@ const Projects = (props) => {
               <h6 className="project-byline">A web companion to the ScratchTrack mobile app</h6>
             </div>
 
+            <div className="project-image">
+              <img className="project-image" src="/img/scratchtrack_demo.gif" alt="scratchtrack demo" text="scratchtrack demo" width="100%"></img>
+            </div>
+
             <div className="project-description">
               <div className="project-tech">
                 <span className="tech-title">Tech stack</span> | React, SASS, Firebase
