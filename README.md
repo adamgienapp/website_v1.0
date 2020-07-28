@@ -1,6 +1,6 @@
 # Personal Website ver. 1.0
 
-Initial build of personal website. Visit http://adamgienapp.com
+Initial build of personal website. Visit https://adamgienapp.com
 
 Tech stack: 
   - React (w/ React router)
